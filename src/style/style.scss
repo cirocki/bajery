@@ -1,0 +1,126 @@
+$defaultBorderRadius: 20px;
+$white: #fff;
+$light: #f4f4f4;
+$dark: #151f32;
+$darkLight: #18273f;
+$darkLightHover: #19304e;
+$darkText: rgba(186, 217, 252, 0.3);
+$pcolor: #328af1;
+
+body {
+    background: $dark;
+    color: $white;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+.questions-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $dark;
+    background-color: #151f32;
+opacity: 1;
+background-color: #151f32;
+opacity: 1;
+background-image: radial-gradient(#19304e 2px, #151f32 2px);
+background-size: 40px 40px;
+    padding: 5vw;
+}
+
+.question__content {
+    background: rgb(25,48,78);
+    background: linear-gradient(146deg, rgba(25,48,78,1) 8%, rgba(50,138,241,1) 55%, rgba(32,75,125,1) 96%); 
+    text-align: left;
+    border-radius: $defaultBorderRadius;
+    padding: 60px;
+    position: relative;
+
+    .question__number {
+        background: $pcolor;
+        display: flex;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 10px solid $dark;
+        position: absolute;
+        top: -40px;
+        left: -40px;
+
+        span {
+            color: $white;
+            font-size: 24px;
+            font-weight: bold;
+
+        }
+    }
+
+    .question__text {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+}
+
+// ANSWERS 
+.answers-wrapper {
+    background: $dark;
+    padding: 5vw;
+}
+
+.answers__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.answer {
+    padding: 40px;
+    background: $darkLight;
+    display: inline-flex;
+    gap: 30px;
+    border-radius: $defaultBorderRadius;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: $darkLightHover;
+       }
+
+    .answer__letter {
+        background: $pcolor;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        position: relative;
+        top: 7px;
+
+        span {
+            color: $white;
+            font-weight: bold;
+            font-size: 24px;
+
+        }
+    }
+}

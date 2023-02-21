@@ -1,0 +1,107 @@
+body {
+  background: #151f32;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.questions-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #151f32;
+  background-color: #151f32;
+  opacity: 1;
+  background-color: #151f32;
+  opacity: 1;
+  background-image: radial-gradient(#19304e 2px, #151f32 2px);
+  background-size: 40px 40px;
+  padding: 5vw;
+}
+
+.question__content {
+  background: rgb(25, 48, 78);
+  background: linear-gradient(146deg, rgb(25, 48, 78) 8%, rgb(50, 138, 241) 55%, rgb(32, 75, 125) 96%);
+  text-align: left;
+  border-radius: 20px;
+  padding: 60px;
+  position: relative;
+}
+.question__content .question__number {
+  background: #328af1;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 10px solid #151f32;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.question__content .question__number span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.question__content .question__text {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.answers-wrapper {
+  background: #151f32;
+  padding: 5vw;
+}
+
+.answers__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.answer {
+  padding: 40px;
+  background: #18273f;
+  display: inline-flex;
+  gap: 30px;
+  border-radius: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.answer:hover {
+  background: #19304e;
+}
+.answer .answer__letter {
+  background: #328af1;
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  top: 7px;
+}
+.answer .answer__letter span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
